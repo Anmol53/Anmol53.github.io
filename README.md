@@ -2,8 +2,8 @@
 - [Portfolio](http://anmolagrawal.me/portfolio/)
 
 - [Next Coding Events](http://anmolagrawal.me/next-events/)
-___
-<br><br><br><br><br>
+
+<br><br><br><br><br><br><br>
 
 ***- Anmol Agrawal***
 
