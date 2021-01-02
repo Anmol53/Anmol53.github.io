@@ -41,8 +41,8 @@
   }
 
   .broken {
-    transform: rotate(45deg) translateX(2rem) translateY(1.4rem);
-    animation: shine 2s forwards, blink 20ms 1s infinite;
+    animation: breaking 1s ease-out forwards, shine 2s forwards,
+      blink 20ms 900ms infinite;
   }
 
   .flicker {
@@ -51,6 +51,33 @@
 
   .flicker-2 {
     animation: shine 2s forwards, blink 5350ms 1s infinite;
+  }
+
+  @keyframes breaking {
+    0% {
+      transform: rotate(0deg) translateX(0rem) translateY(0rem);
+    }
+    15% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
+    }
+    30% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
+    }
+    45% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
+    }
+    60% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
+    }
+    75% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
+    }
+    90% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
+    }
+    100% {
+      transform: rotate(45deg) translateX(2rem) translateY(1.4rem);
+    }
   }
 
   @keyframes blink {
