@@ -1,5 +1,5 @@
-let toggle = 1;
 const navSlide = () => {
+	let toggle = 1;
 	const ham = document.querySelector(".ham");
 	const nav = document.querySelector("nav");
 	const links = document.querySelectorAll(".nav-links li");
@@ -17,6 +17,27 @@ const navSlide = () => {
 	});
 };
 
-if (document.querySelector(".ham")) {
-	navSlide();
-}
+const highlightActiveNavLink = () => {
+	const sections = document.querySelectorAll("section");
+	const links = document.querySelectorAll(".nav-links li");
+	window.addEventListener("scroll", () => {
+		let currentSection = "";
+		sections.forEach((section) => {
+			const sectionTop = section.offsetTop;
+			const sectionHeight = section.clientHeight;
+			if (pageYOffset >= sectionTop - sectionHeight / 3) {
+				currentSection = section.getAttribute("id");
+			}
+		});
+
+		links.forEach((link) => {
+			link.classList.remove("active");
+			if (link.classList.contains(currentSection)) {
+				link.classList.add("active");
+			}
+		});
+	});
+};
+
+navSlide();
+highlightActiveNavLink();
