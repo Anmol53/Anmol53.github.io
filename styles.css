@@ -151,6 +151,7 @@ section.contact {
 h1.me {
     font-family: "WindSong", cursive;
     font-size: 10rem;
+    color: var(--white);
     text-shadow: 3px 3px 0.3rem #000000;
 }
 
