@@ -16,24 +16,25 @@
 </head>
 
 <body>
-    <section id="home" class="home">
+    <header>
         <nav>
             <ul class="nav-links">
                 <li class="home active">
-                    <a href="./"><span>Home</span></a>
+                    <a data-page="home" href="./#home">Home</a>
                 </li>
                 <li class="work">
-                    <a href="./#work"><span>Work</span></a>
+                    <a data-page="work" href="./#work">Work</a>
                 </li>
                 <li class="extra">
-                    <a href="./#extra"><span>Extra</span></a>
+                    <a data-page="extra" href="./#extra">Extra</a>
                 </li>
                 <li class="contact">
-                    <a href="./#contact"><span>Contact</span></a>
+                    <a data-page="contact" href="./#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="./docs/resume.pdf" target="_blank"><span>Resume</span></a>
+                    <a data-page="resume" href="./docs/resume.pdf" target="_blank">Resume</a>
                 </li>
+                <div class="bubble"></div>
             </ul>
             <div class="puller">
                 <div class="ham">
@@ -43,24 +44,29 @@
                 </div>
             </div>
         </nav>
-        <div class="intro">
-            <p>
-                Hello!<br />
-                My Name is
-            </p>
-            <h1 class="me">Anmol</h1>
-            <p>I design and code beautifully simple things, and I love what I do.</p>
-        </div>
-    </section>
-    <section id="work" class="work">
-        <h1>Work</h1>
-    </section>
-    <section id="extra" class="extra">
-        <h1>Extra</h1>
-    </section>
-    <section id="contact" class="contact">
-        <h1>Contact Me</h1>
-    </section>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="intro">
+                <p>
+                    Hello!<br />
+                    My Name is
+                </p>
+                <h1 class="me">Anmol</h1>
+                <p>I design and code beautifully simple things, and I love what I do.</p>
+            </div>
+        </section>
+        <section id="work" class="work">
+            <h1>Work</h1>
+        </section>
+        <section id="extra" class="extra">
+            <h1>Extra</h1>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+        </section>
+    </main>
+
     <script src="./main.js"></script>
 </body>
 

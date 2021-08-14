@@ -1,15 +1,12 @@
 :root {
-    /* Color Palette: https://colorhunt.co/palette/293b5f47597edbe6fdb2ab8c */
-    --dark: #302b63;
-    --white: #f1eedb;
-    --light: #B2AB8C;
+    --primaryColor: #302b63;
+    --secondaryColor: #CAA466;
+    --white: #e9d4bc;
     --gradient-background: #0f0c29;
-    /*fallback for old browsers */
     --gradient-background: -webkit-linear-gradient(to right,
             #24243e,
             #302b63,
             #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
     --gradient-background: linear-gradient(to right,
             #24243e,
             #302b63,
@@ -25,12 +22,7 @@
 body,
 html {
     scroll-behavior: smooth;
-    height: 100vh;
     width: 100%;
-}
-
-body {
-    background: #0f0c29;
     font-family: "Titillium Web", sans-serif;
 }
 
@@ -39,26 +31,26 @@ body::-webkit-scrollbar {
     height: 0px;
 }
 
-section#home {
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+header {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0px;
     background: var(--gradient-background);
+    color: white;
+    z-index: 1;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    min-height: 4vh;
+    margin: auto;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gradient-background);
-    color: var(--white);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .nav-links {
@@ -67,25 +59,12 @@ nav {
     gap: 1rem;
 }
 
-.nav-links li {
-    display: block;
-    text-align: center;
-    padding: 0.5rem;
-    transition: 0.5s ease all;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
-}
-
 .nav-links li:hover {
-    color: var(--light);
+    color: var(--white);
 }
 
 .nav-links li:active {
-    color: var(--dark);
-}
-
-.nav-links li.active {
-    color: var(--light);
-    border-bottom: 3px solid var(--light);
+    color: gray;
 }
 
 .nav-links li a {
@@ -93,6 +72,14 @@ nav {
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    padding: 0.25rem 2rem;
+}
+
+.bubble {
+    position: absolute;
+    z-index: -1;
+    transition: all .5s ease;
+    background: var(--secondaryColor);
 }
 
 .ham {
@@ -109,15 +96,32 @@ nav {
     transition: all 0.3s ease;
 }
 
-
 section {
-    padding-top: 3rem;
-    background-color: #fff;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section#extra {
-    background-color: var(--dark);
+section h1 {
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+section.home {
+    background: var(--gradient-background);
+}
+
+section.work {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+}
+
+section.extra {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+section.contact {
+    background: linear-gradient(to right, #96c93d, #00b09b);
 }
 
 .intro {
@@ -138,23 +142,17 @@ h1.me {
     text-shadow: 3px 3px 0.3rem #000000;
 }
 
-/* @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 50%;
-    }
-} */
-
 @media screen and (max-width: 768px) {
-
-    section#home {
-        overflow-x: hidden;
+    header {
+        position: relative;
+        box-shadow: none;
     }
 
     nav {
-        position: relative;
+        width: 100%;
+        position: absolute;
         flex-direction: column;
         background: rgba(0, 0, 0, 0);
-        box-shadow: none;
         transition: transform 1s ease-in-out;
         transform: translateY(-85%);
     }
@@ -168,7 +166,7 @@ h1.me {
     .ham {
         display: block;
         padding: 1rem;
-        background-color: #302b63;
+        background: var(--gradient-background);
         clip-path: polygon(90% 0, 100% 75%, 50% 100%, 0 75%, 10% 0);
     }
 
@@ -207,27 +205,26 @@ h1.me {
     }
 }
 
-
 @keyframes fade {
     from {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-200%);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 }
 
 @keyframes unfade {
     from {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 
     to {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translateY(-200%);
     }
 }

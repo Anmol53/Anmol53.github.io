@@ -1,3 +1,30 @@
+const sections = document.querySelectorAll("section");
+const bubble = document.querySelector(".bubble");
+
+const options = {
+	threshold: 0.7,
+};
+
+const navCheck = (entries) => {
+	entries.forEach((entry) => {
+		const className = entry.target.className;
+		const activeLink = document.querySelector(`[data-page=${className}]`);
+		const linkBoxDimensions = activeLink.getBoundingClientRect();
+		if (entry.isIntersecting) {
+			bubble.style.height = `${linkBoxDimensions.height}px`;
+			bubble.style.width = `${linkBoxDimensions.width}px`;
+			bubble.style.top = `${linkBoxDimensions.top}px`;
+			bubble.style.left = `${linkBoxDimensions.left}px`;
+		}
+	});
+};
+
+const observer = new IntersectionObserver(navCheck, options);
+
+sections.forEach((section) => {
+	observer.observe(section);
+});
+
 const navSlide = () => {
 	let toggle = 1;
 	const ham = document.querySelector(".ham");
@@ -17,27 +44,4 @@ const navSlide = () => {
 	});
 };
 
-const highlightActiveNavLink = () => {
-	const sections = document.querySelectorAll("section");
-	const links = document.querySelectorAll(".nav-links li");
-	window.addEventListener("scroll", () => {
-		let currentSection = "";
-		sections.forEach((section) => {
-			const sectionTop = section.offsetTop;
-			const sectionHeight = section.clientHeight;
-			if (pageYOffset >= sectionTop - sectionHeight / 3) {
-				currentSection = section.getAttribute("id");
-			}
-		});
-
-		links.forEach((link) => {
-			link.classList.remove("active");
-			if (link.classList.contains(currentSection)) {
-				link.classList.add("active");
-			}
-		});
-	});
-};
-
 navSlide();
-highlightActiveNavLink();
