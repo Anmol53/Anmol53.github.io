@@ -242,10 +242,6 @@ section.work {
     place-items: center;
 }
 
-section.extra {
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-}
-
 section.contact {
     background-image: var(--gradient-background), url('./images/footer_bg4.jpg');
 }
