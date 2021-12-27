@@ -195,11 +195,11 @@ main {
 }
 
 @media screen and (min-width: 1441px) {
-
+/*
     .card {
         transform: scale(1.5);
     }
-
+*/
     /* .card::before {
         transform: scale(1.5);
     }
