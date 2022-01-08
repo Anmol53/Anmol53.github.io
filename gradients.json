@@ -1,0 +1,16 @@
+{
+	"gradients": [
+		"linear-gradient(90deg, rgb(027, 199, 239) 0%, rgb(027, 167, 051) 100%)",
+		"linear-gradient(90deg, rgb(043, 241, 204) 0%, rgb(043, 190, 005) 100%)",
+		"linear-gradient(90deg, rgb(064, 172, 207) 0%, rgb(064, 096, 156) 100%)",
+		"linear-gradient(90deg, rgb(071, 172, 167) 0%, rgb(071, 088, 052) 100%)",
+		"linear-gradient(90deg, rgb(092, 154, 248) 0%, rgb(092, 045, 220) 100%)",
+		"linear-gradient(90deg, rgb(131, 098, 028) 0%, rgb(130, 199, 080) 100%)",
+		"linear-gradient(90deg, rgb(150, 082, 223) 0%, rgb(149, 161, 195) 100%)",
+		"linear-gradient(90deg, rgb(200, 138, 106) 0%, rgb(199, 158, 035) 100%)",
+		"linear-gradient(90deg, rgb(228, 033, 203) 0%, rgb(227, 021, 002) 100%)",
+		"linear-gradient(90deg, rgb(024, 144, 135) 0%, rgb(024, 115, 149) 100%)",
+		"linear-gradient(90deg, rgb(253, 132, 182) 0%, rgb(252, 090, 004) 100%)",
+		"linear-gradient(90deg, rgb(255, 034, 015) 0%, rgb(253, 245, 118) 100%)"
+	]
+}
