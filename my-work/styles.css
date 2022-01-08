@@ -138,6 +138,11 @@ section {
   align-items: flex-start;
 }
 
+.badges{
+  cursor: default;
+  user-select: none;
+}
+
 li.badge {
   list-style: none;
   display: inline-block;
@@ -159,6 +164,7 @@ li.badge {
   cursor: pointer;
   padding: 1rem 1.5rem;
   font-weight: 600;
+  transition: all 0.5s ease;
 }
 
 .button:hover {
@@ -248,9 +254,14 @@ hr {
     padding: 1rem;
     padding-bottom: 0;
   }
+
   .details-container {
     padding: 1rem;
     padding-top: 0;
+  }
+
+  hr {
+    margin: 2.5rem auto;
   }
 }
 
