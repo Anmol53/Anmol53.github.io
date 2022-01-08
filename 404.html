@@ -1,259 +1,260 @@
 <style>
-    @font-face {
-        font-family: Clip;
-        src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  @font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+
+  body {
+    background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+  }
+
+  .sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+
+  .broken {
+    animation: breaking 1s ease-out forwards, shine 2s forwards,
+      blink 20ms 900ms infinite;
+  }
+
+  .flicker {
+    animation: shine 2s forwards, blink 3125ms 3s infinite;
+  }
+
+  .flicker-2 {
+    animation: shine 2s forwards, blink 5350ms 1s infinite;
+  }
+
+  @keyframes breaking {
+    0% {
+      transform: rotate(0deg) translateX(0rem) translateY(0rem);
     }
 
-    body {
-        background-color: #141114;
-        background-image: linear-gradient(335deg, black 23px, transparent 23px),
-            linear-gradient(155deg, black 23px, transparent 23px),
-            linear-gradient(335deg, black 23px, transparent 23px),
-            linear-gradient(155deg, black 23px, transparent 23px);
-        background-size: 58px 58px;
-        background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    15% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
     }
 
-    .sign {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 50%;
-        background-image: radial-gradient(ellipse 50% 35% at 50% 50%,
-                #6b1839,
-                transparent);
-        transform: translate(-50%, -50%);
-        letter-spacing: 2;
-        left: 50%;
-        top: 50%;
-        font-family: "Clip";
-        text-transform: uppercase;
-        font-size: 6rem;
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-            -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-            0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-        animation: shine 2s forwards, flicker 3s infinite;
+    30% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
     }
 
-    .broken {
-        animation: breaking 1s ease-out forwards, shine 2s forwards,
-            blink 20ms 900ms infinite;
+    45% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
     }
 
-    .flicker {
-        animation: shine 2s forwards, blink 3125ms 3s infinite;
+    60% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
     }
 
-    .flicker-2 {
-        animation: shine 2s forwards, blink 5350ms 1s infinite;
+    75% {
+      transform: rotate(5deg) translateX(0rem) translateY(0rem);
     }
 
-    @keyframes breaking {
-        0% {
-            transform: rotate(0deg) translateX(0rem) translateY(0rem);
-        }
-
-        15% {
-            transform: rotate(5deg) translateX(0rem) translateY(0rem);
-        }
-
-        30% {
-            transform: rotate(-5deg) translateX(0rem) translateY(0rem);
-        }
-
-        45% {
-            transform: rotate(5deg) translateX(0rem) translateY(0rem);
-        }
-
-        60% {
-            transform: rotate(-5deg) translateX(0rem) translateY(0rem);
-        }
-
-        75% {
-            transform: rotate(5deg) translateX(0rem) translateY(0rem);
-        }
-
-        90% {
-            transform: rotate(-5deg) translateX(0rem) translateY(0rem);
-        }
-
-        100% {
-            transform: rotate(45deg) translateX(2rem) translateY(1.4rem);
-        }
+    90% {
+      transform: rotate(-5deg) translateX(0rem) translateY(0rem);
     }
 
-    @keyframes blink {
+    100% {
+      transform: rotate(45deg) translateX(2rem) translateY(1.4rem);
+    }
+  }
 
-        0%,
-        22%,
-        36%,
-        75% {
-            color: #ffe6ff;
-            text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-                -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-                0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-        }
-
-        28%,
-        33% {
-            color: #ff65bd;
-            text-shadow: none;
-        }
-
-        82%,
-        97% {
-            color: #ff2483;
-            text-shadow: none;
-        }
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
     }
 
-    @keyframes shine {
-        0% {
-            color: #6b1839;
-            text-shadow: none;
-        }
-
-        100% {
-            color: #ffe6ff;
-            text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-                -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-                0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-        }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
     }
 
-    @keyframes flicker {
-        from {
-            opacity: 1;
-        }
-
-        4% {
-            opacity: 0.9;
-        }
-
-        6% {
-            opacity: 0.85;
-        }
-
-        8% {
-            opacity: 0.95;
-        }
-
-        10% {
-            opacity: 0.9;
-        }
-
-        11% {
-            opacity: 0.922;
-        }
-
-        12% {
-            opacity: 0.9;
-        }
-
-        14% {
-            opacity: 0.95;
-        }
-
-        16% {
-            opacity: 0.98;
-        }
-
-        17% {
-            opacity: 0.9;
-        }
-
-        19% {
-            opacity: 0.93;
-        }
-
-        20% {
-            opacity: 0.99;
-        }
-
-        24% {
-            opacity: 1;
-        }
-
-        26% {
-            opacity: 0.94;
-        }
-
-        28% {
-            opacity: 0.98;
-        }
-
-        37% {
-            opacity: 0.93;
-        }
-
-        38% {
-            opacity: 0.5;
-        }
-
-        39% {
-            opacity: 0.96;
-        }
-
-        42% {
-            opacity: 1;
-        }
-
-        44% {
-            opacity: 0.97;
-        }
-
-        46% {
-            opacity: 0.94;
-        }
-
-        56% {
-            opacity: 0.9;
-        }
-
-        58% {
-            opacity: 0.9;
-        }
-
-        60% {
-            opacity: 0.99;
-        }
-
-        68% {
-            opacity: 1;
-        }
-
-        70% {
-            opacity: 0.9;
-        }
-
-        72% {
-            opacity: 0.95;
-        }
-
-        93% {
-            opacity: 0.93;
-        }
-
-        95% {
-            opacity: 0.95;
-        }
-
-        97% {
-            opacity: 0.93;
-        }
-
-        to {
-            opacity: 1;
-        }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
     }
+  }
+
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+
+    4% {
+      opacity: 0.9;
+    }
+
+    6% {
+      opacity: 0.85;
+    }
+
+    8% {
+      opacity: 0.95;
+    }
+
+    10% {
+      opacity: 0.9;
+    }
+
+    11% {
+      opacity: 0.922;
+    }
+
+    12% {
+      opacity: 0.9;
+    }
+
+    14% {
+      opacity: 0.95;
+    }
+
+    16% {
+      opacity: 0.98;
+    }
+
+    17% {
+      opacity: 0.9;
+    }
+
+    19% {
+      opacity: 0.93;
+    }
+
+    20% {
+      opacity: 0.99;
+    }
+
+    24% {
+      opacity: 1;
+    }
+
+    26% {
+      opacity: 0.94;
+    }
+
+    28% {
+      opacity: 0.98;
+    }
+
+    37% {
+      opacity: 0.93;
+    }
+
+    38% {
+      opacity: 0.5;
+    }
+
+    39% {
+      opacity: 0.96;
+    }
+
+    42% {
+      opacity: 1;
+    }
+
+    44% {
+      opacity: 0.97;
+    }
+
+    46% {
+      opacity: 0.94;
+    }
+
+    56% {
+      opacity: 0.9;
+    }
+
+    58% {
+      opacity: 0.9;
+    }
+
+    60% {
+      opacity: 0.99;
+    }
+
+    68% {
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 0.9;
+    }
+
+    72% {
+      opacity: 0.95;
+    }
+
+    93% {
+      opacity: 0.93;
+    }
+
+    95% {
+      opacity: 0.95;
+    }
+
+    97% {
+      opacity: 0.93;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 </style>
 
 <body>
-    <div class="sign">
-        4<span class="flicker">0</span>4&nbspPage&nbsp<span class="broken">N</span>ot&nbspFo<span
-            class="flicker-2">u</span>nd
-    </div>
+  <div class="sign">
+    4<span class="flicker">0</span>4&nbspPage&nbsp<span class="broken">N</span
+    >ot&nbspFo<span class="flicker-2">u</span>nd
+  </div>
 </body>

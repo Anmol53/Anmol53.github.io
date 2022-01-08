@@ -1,101 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Anmol Agrawal's Portfolio" />
     <meta name="author" content="Anmol Agrawal, anmol.ag53@gmail.com" />
     <title>Anmol Agrawal's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=WindSong&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=WindSong&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
-</head>
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li class="home active">
-                    <a data-page="home" href="./#home">Home</a>
-                </li>
-                <li class="work">
-                    <a data-page="work" href="./#work">Work</a>
-                </li>
-                <li class="contact">
-                    <a data-page="contact" href="./#contact">Contact</a>
-                </li>
-                <li>
-                    <a data-page="resume" href="./docs/resume.pdf" target="_blank">Resume</a>
-                </li>
-                <div class="bubble"></div>
-            </ul>
-            <div class="puller">
-                <div class="ham">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <body>
     <main>
-        <section class="home" id="home">
-            <div class="intro">
-                <p>
-                    Hello!<br />
-                    My Name is
-                </p>
-                <h1 class="me">Anmol</h1>
-                <p>I design and code beautifully simple things, and I love what I do.</p>
+      <section class="home" id="home">
+        <div class="intro">
+          <p>
+            Hello!<br />
+            My Name is
+          </p>
+          <h1 class="me">Anmol</h1>
+          <p>
+            I design and code beautifully simple things, and I love what I do.
+          </p>
+        </div>
+      </section>
+      <section id="work" class="work">
+        <h1>Work</h1>
+        <div class="container">
+          <div class="cards-container">
+            <div class="card" title="Projects">
+              <div class="overlay"></div>
+              <a href="./my-work/projects">Projects</a>
             </div>
-        </section>
-        <section id="work" class="work">
-            <h1>Work</h1>
-            <div class="container">
-                <div class="cards-container">
-                    <div class="card" title="Projects">
-                        <div class="overlay"></div>
-                        <a href="./my-work#projects">Projects</a>
-                    </div>
-                    <div class="card" title="UI Layouts">
-                        <div class="overlay"></div>
-                        <a href="./my-work#ui_layouts">UI Layouts</a>
-                    </div>
-                    <div class="card" title="Web Utilites">
-                        <div class="overlay"></div>
-                        <a href="./my-work#web_utilites">Web Utilites</a>
-                    </div>
-                    <div class="card" title="Animations">
-                        <div class="overlay"></div>
-                        <a href="./my-work#animations">Animations</a>
-                    </div>
-                    <div class="card" title="PS">
-                        <div class="overlay"></div>
-                        <a href="./my-work#ps">PS</a>
-                    </div>
-                    <div class="card" title="Blogs">
-                        <div class="overlay"></div>
-                        <a href="./my-work#blogs">Blogs</a>
-                    </div>
-                </div>
+            <div class="card" title="UI Layouts">
+              <div class="overlay"></div>
+              <a href="./my-work/ui-layouts">UI Layouts</a>
             </div>
-        </section>
-        <section id="contact" class="contact">
-            <h1>Contact Me</h1>
-            <div class="copyright">
-                <p>Copyright &copy; Leafy Cafe <script>
-                        document.write(new Date().getFullYear());
-                    </script> | This website is developed by <a href="https://anmolagrawal.dev/"><span
-                            class="colored-text">me</span></a> 😊</p>
+            <div class="card" title="Web Utilites">
+              <div class="overlay"></div>
+              <a href="./my-work/web-utilites">Web Utilites</a>
             </div>
-        </section>
+            <div class="card" title="Animations">
+              <div class="overlay"></div>
+              <a href="./my-work/animations">Animations</a>
+            </div>
+            <div class="card" title="PS">
+              <div class="overlay"></div>
+              <a href="./my-work/problem-solving">Problem Solving</a>
+            </div>
+            <div class="card" title="Blogs">
+              <div class="overlay"></div>
+              <a href="./my-work/blogs">Blogs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="connect" class="connect">
+        <h1>Connect with Me</h1>
+        <div class="copyright">
+          <p>
+            Copyright &copy; Leafy Cafe
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            | This website is developed by
+            <a href="https://anmolagrawal.dev/"
+              ><span class="colored-text">me</span></a
+            >
+            😊
+          </p>
+        </div>
+      </section>
     </main>
-
-    <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
