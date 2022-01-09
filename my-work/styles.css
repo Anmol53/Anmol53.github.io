@@ -124,7 +124,7 @@ section {
 
 .images-slider{
   display: flex;
-  aspect-ratio: 683/384;
+  aspect-ratio: 1366/767;
 }
 
 .images-slider img{
