@@ -1,3 +1,25 @@
+const slideShow = () => {
+  document.querySelectorAll(".images-slider").forEach((slider) => {
+    const images = slider.querySelectorAll("img");
+    let counter = 1;
+    let width = images[counter].clientWidth;
+    let interval = 3;
+    setInterval(() => {
+      slider.style.transition = `transform 1s ease-in-out`;
+      slider.style.transform = `translateX(${width * counter * -1}px)`;
+      counter++;
+    }, interval * 1000);
+    slider.addEventListener("transitionend", () => {
+      if (counter === images.length) {
+        counter = 0;
+        slider.style.transition = `none`;
+        slider.style.transform = `translateX(${width * counter * -1}px)`;
+        counter++;
+      }
+    });
+  });
+};
+
 const colorBadge = () => {
   const badges = document.querySelectorAll("li.badge");
   badges.forEach((badge) => {
@@ -31,4 +53,5 @@ const navSlide = () => {
 };
 
 colorBadge();
+slideShow();
 navSlide();
