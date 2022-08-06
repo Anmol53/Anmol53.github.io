@@ -260,7 +260,9 @@
         window.onload = () => {
             currentURL = window.location.href;
             lowerCaseURL = currentURL.toLowerCase();
-            location.replace(lowerCaseURL);
+            if(currentURL != lowerCaseURL){
+                location.replace(lowerCaseURL);
+            }
         };
     </script>
 </body>
