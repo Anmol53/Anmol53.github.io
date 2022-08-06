@@ -256,4 +256,11 @@
         4<span class="flicker">0</span>4&nbspPage&nbsp<span class="broken">N</span>ot&nbspFo<span
             class="flicker-2">u</span>nd
     </div>
+    <script>
+        window.onload = () => {
+            currentURL = window.location.href;
+            lowerCaseURL = currentURL.toLowerCase();
+            location.replace(lowerCaseURL);
+        };
+    </script>
 </body>
