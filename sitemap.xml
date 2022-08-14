@@ -2,20 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://anmolagrawal.dev/</loc>
-        <lastmod>2022-08-14T19:50:00+05:30</lastmod>
+        <lastmod>2022-08-14T20:20:00+05:30</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.anmolagrawal.dev/bmi-tracker</loc>
+        <loc>https://www.anmolagrawal.dev/bmi-tracker/</loc>
         <lastmod>2021-12-28T22:29:00+05:30</lastmod>
     </url>
     <url>
-        <loc>https://www.anmolagrawal.dev/bubble</loc>
+        <loc>https://www.anmolagrawal.dev/bubble/</loc>
         <lastmod>2021-12-27T18:55:00+05:30</lastmod>
     </url>
     <url>
-        <loc>https://www.anmolagrawal.dev/cubg</loc>
+        <loc>https://www.anmolagrawal.dev/cubg/</loc>
         <lastmod>2021-08-29T00:43:00+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://www.anmolagrawal.dev/css-conceptual-questions/</loc>
+        <lastmod>2022-08-14T20:17:00+05:30</lastmod>
     </url>
     <url>
         <loc>https://www.anmolagrawal.dev/gradient-generator/</loc>
