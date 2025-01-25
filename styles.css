@@ -32,7 +32,7 @@ main {
 
 .container {
     width: 18.75rem;
-    height: 28.15rem;
+    /* height: 28.15rem; */
     background-color: #292929;
     border-radius: 15px;
     box-shadow: 10px 10px 30px rgb(0, 0, 0);
@@ -123,6 +123,7 @@ main {
     outline: none;
     cursor: pointer;
     margin: 0.2rem;
+    border-radius: 0.5rem;
 }
 
 .buttons span:hover {
@@ -136,6 +137,15 @@ main {
     text-transform: none;
     text-decoration: none;
     color: inherit;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 1rem;
+    padding: 1rem 1rem 0;
+    list-style: none;
 }
 
 .lower {
@@ -174,14 +184,6 @@ main {
     color: #292929;
     font-size: 0.6rem;
     margin: 5px 10px 0px 0px;
-}
-
-.msg {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-    bottom: 1rem;
-    color: antiquewhite;
 }
 
 a.styled-link {
