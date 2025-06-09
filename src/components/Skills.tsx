@@ -18,7 +18,7 @@ const skillsRow1 = [
   {
     name: "Next.js",
     icon: "devicon-nextjs-plain",
-    color: "text-white dark:text-white",
+    color: "text-black dark:text-white",
   },
   {
     name: "Redux",
@@ -66,7 +66,7 @@ const skillsRow2 = [
   {
     name: "Express",
     icon: "devicon-express-original",
-    color: "text-white dark:text-white",
+    color: "text-black dark:text-white",
   },
   {
     name: "MongoDB",
@@ -86,7 +86,7 @@ const skillsRow2 = [
   {
     name: "Kafka",
     icon: "devicon-apachekafka-original",
-    color: "text-white dark:text-white",
+    color: "text-black dark:text-white",
   },
   {
     name: "PostgreSQL",
@@ -154,7 +154,7 @@ const skillsRow3 = [
   {
     name: "GitHub",
     icon: "devicon-github-original",
-    color: "text-white dark:text-white",
+    color: "text-black dark:text-white",
   },
   {
     name: "Kubernetes",
