@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
     description: [
       "Developing and enhancing an in-house Marketing Automation Platform that segments users and delivers targeted communications across multiple channels (Email, SMS, Push Notifications).",
       "Implemented user segmentation using Elastic Search to efficiently query and filter user profiles based on various attributes.",
-      "Built scalable data pipelines using AWS services (Lambda, Kinesis, EC2, ECS) to process and sync user data.",
+      "Built scalable data pipelines using AWS services to process and sync user data.",
       "Designed and optimized campaign management system for creating, scheduling, and tracking multi-channel communications.",
       "Utilized Redis for caching and MongoDB for storing campaign data, improving system performance and response times.",
       "Implemented comprehensive monitoring using ELK Stack for tracking campaign deliveries and user engagement metrics."
