@@ -15,6 +15,13 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Anmol53/leafy-cafe"
   },
   {
+    title: "Dual Shades",
+    description: "Transform your photos with Dual Shades — Keep your subject in full color and turn the background to black and white effortlessly. Edit, save, and share with ease.",
+    tags: ["Next.js", "Image Processing", "Web App", "Photo Editing"],
+    liveLink: "https://dual-shades.anmolagrawal.dev/?ref=my-portfolio",
+    githubLink: "https://github.com/Anmol53/dual-shades"
+  },
+  {
     title: "BMI Tracker",
     description: "A Progressive Web App (PWA) that helps users monitor their Body Mass Index over time. Features include BMI calculation, historical data tracking with interactive timeline charts using Recharts, and offline functionality. Being a PWA, it can be installed on any device for a native app-like experience.",
     tags: ["React.js", "PWA", "Recharts", "LocalStorage", "Service Workers"],
