@@ -8,18 +8,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Dual Shades",
+    description: "A powerful web app that transforms your photos by keeping your subject in full color while turning the background to black and white. Features an intuitive interface for easy editing, real-time previews, and seamless saving and sharing options. Built with Next.js, it leverages advanced image processing techniques to deliver fast, high-quality results directly in the browser.",
+    tags: ["Next.js", "Image Processing", "Web App", "Photo Editing"],
+    liveLink: "https://dual-shades.anmolagrawal.dev/?ref=my-portfolio",
+    githubLink: "/request-access?repo=dual-shades"
+  },
+  {
     title: "Leafy Cafe",
     description: "A beautifully crafted website for 'Leafy Cafe', a fictional multi-chain vegan restaurant. Features an elegant, responsive design that showcases the restaurant's menu, locations, and contact information. Built with pure HTML, CSS, and JavaScript, demonstrating mastery of core web technologies without relying on frameworks.",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Web Animation"],
     liveLink: "https://www.anmolagrawal.dev/leafy-cafe",
     githubLink: "https://github.com/Anmol53/leafy-cafe"
-  },
-  {
-    title: "Dual Shades",
-    description: "Transform your photos with Dual Shades — Keep your subject in full color and turn the background to black and white effortlessly. Edit, save, and share with ease.",
-    tags: ["Next.js", "Image Processing", "Web App", "Photo Editing"],
-    liveLink: "https://dual-shades.anmolagrawal.dev/?ref=my-portfolio",
-    githubLink: "https://github.com/Anmol53/dual-shades"
   },
   {
     title: "BMI Tracker",
