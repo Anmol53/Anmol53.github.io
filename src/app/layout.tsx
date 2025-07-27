@@ -206,6 +206,23 @@ export default function RootLayout({
                   name: "Software Engineer",
                   description:
                     "Experienced full stack developer building performant web applications.",
+                  estimatedSalary: [
+                    {
+                      "@type": "MonetaryAmountDistribution",
+                      name: "base",
+                      currency: "INR",
+                      duration: "P1Y",
+                      minValue: 1800000,
+                      maxValue: 2000000,
+                      median: 1900000,
+                    },
+                  ],
+                  occupationLocation: [
+                    {
+                      "@type": "City",
+                      name: "Mumbai, Maharashtra, India",
+                    },
+                  ],
                 },
                 worksOn: [
                   {
@@ -275,7 +292,7 @@ export default function RootLayout({
                   },
                 ],
               },
-              dateCreated: "2021-10-07",
+              dateCreated: "20211007T000000Z",
               inLanguage: "en",
               potentialAction: {
                 "@type": "ReadAction",
