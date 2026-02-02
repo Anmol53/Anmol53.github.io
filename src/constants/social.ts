@@ -20,7 +20,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Email",
-    url: "mailto:anmol.ag53@gmail.com",
+    url: "mailto:mail@anmolagrawal.dev",
     Icon: FaEnvelope
   }
 ]; 

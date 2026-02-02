@@ -10,7 +10,7 @@ const siteConfig = {
     "Portfolio website of Anmol Agrawal, a passionate Software Developer with expertise in React, Node.js, and cloud technologies. Currently working at Shaadi.com, building scalable web applications.",
   url: "https://anmolagrawal.dev",
   author: "Anmol Agrawal",
-  email: "anmol.ag53@gmail.com",
+  email: "mail@anmolagrawal.dev",
   blogsUrl: "https://blogs.anmolagrawal.dev",
   twitterHandle: "@Ag53Anmol",
   image: "https://avatars.githubusercontent.com/u/26030484?v=4",

@@ -100,7 +100,7 @@ export function Hero() {
             <Icon icon={SiHashnode} size="lg" />
           </Link>
           <Link
-            href="mailto:anmol.ag53@gmail.com"
+            href="mailto:mail@anmolagrawal.dev"
             className="text-gray-600 dark:text-gray-400 hover:text-[#EA4335] p-2 hover:bg-gray-100 dark:hover:bg-gray-800/50 rounded-lg"
           >
             <Icon icon={FaEnvelope} size="lg" />
